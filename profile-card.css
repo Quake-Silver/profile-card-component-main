@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+
+  background: url(images/bg-pattern-top.svg) -35em -60em,
+    url(images/bg-pattern-bottom.svg) 35em 20em;
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  position: relative;
+  border: 1px solid white transparent;
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 70px;
+  width: 80px;
+}
+.client-details {
+  position: absolute;
+  bottom: 120px;
+  text-align: center;
+}
+.client-details > h3 {
+  display: inline;
+  color: hsl(229, 23%, 23%);
+}
+.client-details > p {
+  color: hsl(0, 0%, 59%);
+  margin-top: 7px;
+}
+span {
+  color: hsl(0, 0%, 59%);
+  margin-left: 5px;
+}
+.card-bottom {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+}
+hr {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-top: 0.1rem solid hsl(227, 10%, 46%);
+}
+.list {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  padding: 0px;
+
+  margin: auto 30px;
+}
+
+ul h3 {
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 4px;
+  text-align: center;
+}
+ul p {
+  color: hsl(0, 0%, 59%);
+  font-size: 13px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: black;
+}
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+  .card {
+    width: 270px;
+    height: 270px;
+  }
+  .profile-img {
+    margin-bottom: 70px;
+    width: 60px;
+  }
+  .client-details {
+    position: absolute;
+    top: 150px;
+  }
+  .list {
+    bottom: 10px;
+  }
+  hr {
+    margin-bottom: 10px;
+  }
+}
